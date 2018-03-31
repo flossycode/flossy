@@ -7,9 +7,9 @@ tries = 0
 
 print "Welcome to Flossy's Number Challenge!"
 print "I am thinking of a number between 1 and 100."
-print "I will give you six tries to guess my number. Good luck Brainbox!"
+print "I will give you seven tries to guess my number. Good luck Brainbox!"
 
-while guess != secret_number and tries < 6:
+while guess != secret_number and tries < 7:
     guess = input("What is your guess? ")
     if guess > secret_number:
         print "That is too high."
