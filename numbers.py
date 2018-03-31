@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import random
+import os
 secret_number = random.randint(1,100)
 guess = 0
 tries = 0
@@ -19,6 +20,7 @@ while guess != secret_number and tries < 7:
 
 if guess ==secret_number:
     print "Holy Cow, you guessed my number Einstein!"
+    os.system("cowsay -w Holy Cow!")
 else:
     print "Better luck next time wannabe."
     print "The secret number was", secret_number
